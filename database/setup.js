@@ -4,7 +4,7 @@ require('dotenv').config();
 // Initialize database connection
 const db = new Sequelize({
     dialect: process.env.DB_TYPE,
-    storage: process.env.DB_NAME,
+    storage: `database/${process.env.DB_NAME}` || 'database/company_projects.db',
     logging: false
 });
 
@@ -27,7 +27,7 @@ const User = db.define('User', {
     password: {
         type: DataTypes.STRING,
         allowNull: false
-    }
+    },
     // TODO: Add role field (employee, manager, admin)
 });
 
