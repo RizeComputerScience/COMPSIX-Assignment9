@@ -1,4 +1,4 @@
-# Company Project Management API
+# Assignment #9: Company Project Management API
 
 A RESTful API for managing company projects and tasks with role-based access control.
 
