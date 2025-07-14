@@ -169,7 +169,7 @@ app.get('/api/users', requireAuth, async (req, res) => {
 
 // PROJECT ROUTES
 
-// GET /api/projects - Get projects (TODO: Employee sees assigned, Manager+ sees all)
+// GET /api/projects - Get projects
 app.get('/api/projects', requireAuth, async (req, res) => {
     try {
         const projects = await Project.findAll({
@@ -326,7 +326,7 @@ app.post('/api/projects/:id/tasks', requireAuth, async (req, res) => {
     }
 });
 
-// PUT /api/tasks/:id - Update task (TODO: Employee for own, Manager+ for all)
+// PUT /api/tasks/:id - Update task
 app.put('/api/tasks/:id', requireAuth, async (req, res) => {
     try {
         const { title, description, status, priority } = req.body;
