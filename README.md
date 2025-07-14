@@ -58,6 +58,6 @@ This API is **partially implemented** and needs JWT authentication and role-base
 - `mike@company.com` (Admin) - password: password123
 
 ## Role Permissions (To Be Implemented)
-- **Employee**: View assigned projects/tasks, update own task status
+- **Employee**: View projects/tasks, update task status
 - **Manager**: Create/edit projects, assign tasks, view team progress
 - **Admin**: Full system access, manage users, delete projects
